@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/main.c
+stdio.h
+-
+stdlib.h
+-
+windows.h
+-
+

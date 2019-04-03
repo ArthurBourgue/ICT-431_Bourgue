@@ -12,7 +12,17 @@
 #pragma execution_character_set( "utf-8" )
 
 
-
+char tableauVisu[9][9] = {
+        0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,
+};
 
 int Maquette1(int col,int lig)                           //1ere grille de jeu.
 {
@@ -29,17 +39,6 @@ int Maquette1(int col,int lig)                           //1ere grille de jeu.
             0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 4, 4, 4, 4, 4,
-    };
-    char tableauVisu[9][9] = {
-            0,0,0,0,0,0,0,0,0,
-            0,0,0,0,0,0,0,0,0,
-            0,0,0,0,0,0,0,0,0,
-            0,0,0,0,0,0,0,0,0,
-            0,0,0,0,0,0,0,0,0,
-            0,0,0,0,0,0,0,0,0,
-            0,0,0,0,0,0,0,0,0,
-            0,0,0,0,0,0,0,0,0,
-            0,0,0,0,0,0,0,0,0,
     };
 
     if(tableauJoueur[col][lig] == PETIT_BATEAU || tableauJoueur[col][lig] == MOYEN_BATEAU1 || tableauJoueur[col][lig] == MOYEN_BATEAU2 ||tableauJoueur[col][lig] == GRAND_BATEAU || tableauJoueur[col][lig] == ENORME_BATEAU )
