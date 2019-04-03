@@ -26,8 +26,8 @@ char tableauVisu[9][9] = {
 
 int Maquette1(int col,int lig)                           //1ere grille de jeu.
 {
-    col = col -1;
-    lig = lig -1;
+    col = col - 1;
+    lig = lig - 1;
 
     int tableauJoueur[9][9] = {
             0, 0, 1, 1, 0, 0, 0, 0, 0,
@@ -41,22 +41,39 @@ int Maquette1(int col,int lig)                           //1ere grille de jeu.
             0, 0, 0, 0, 4, 4, 4, 4, 4,
     };
 
-    if(tableauJoueur[col][lig] == PETIT_BATEAU || tableauJoueur[col][lig] == MOYEN_BATEAU1 || tableauJoueur[col][lig] == MOYEN_BATEAU2 ||tableauJoueur[col][lig] == GRAND_BATEAU || tableauJoueur[col][lig] == ENORME_BATEAU )
-    {
+    if (tableauJoueur[col][lig] == PETIT_BATEAU || tableauJoueur[col][lig] == MOYEN_BATEAU1 ||
+        tableauJoueur[col][lig] == MOYEN_BATEAU2 || tableauJoueur[col][lig] == GRAND_BATEAU ||
+        tableauJoueur[col][lig] == ENORME_BATEAU) {
         tableauVisu[col][lig] = 1;
         printf("touché!\n");
-    }else{
+    } else {
         tableauVisu[col][lig] = 3;
         printf("loupé\n\n");
     }
     int ligne = 0;
     int colonne = 0;
-    for (ligne = 0; ligne<9; ligne++){
-        for(colonne = 0;colonne<9;colonne++){
-            printf("%d \t",tableauVisu[ligne][colonne]);
+    for (ligne = 0; ligne < 9; ligne++) {
+        for (colonne = 0; colonne < 9; colonne++) {
+            printf("%d \t", tableauVisu[ligne][colonne]);
         }
         printf("\n");
     }
+}
+    int hpPartie(int col,int lig){
+    col = col - 1;
+    lig = lig - 1;
+
+        int tableauJoueur[9][9] = {
+                0, 0, 1, 1, 0, 0, 0, 0, 0,
+                0, 0, 0, 0, 0, 2, 0, 0, 0,
+                0, 0, 0, 0, 0, 2, 0, 0, 3,
+                0, 0, 0, 0, 0, 2, 0, 0, 3,
+                0, 0, 0, 0, 0, 0, 0, 0, 3,
+                0, 0, 21, 21, 21, 0, 0, 0, 3,
+                0, 0, 0, 0, 0, 0, 0, 0, 0,
+                0, 0, 0, 0, 0, 0, 0, 0, 0,
+                0, 0, 0, 0, 4, 4, 4, 4, 4,
+        };
     int hpRestant = HPPARTIE;
     if(tableauJoueur[col][lig] == PETIT_BATEAU){
         hpRestant = hpRestant - PETIT_BATEAU;
@@ -80,7 +97,7 @@ int Maquette1(int col,int lig)                           //1ere grille de jeu.
 int main()
 {
     //====VARIABLES====//
-    int ChoixBase,ChoixJeux,collonne,ligne,numMaquette,nbVie = 100,compteur = 0,hpRestant = HPPARTIE;;
+    int ChoixBase,ChoixJeux,collonne,ligne,numMaquette,nbVie = 1,compteur = 0,hpRestant = HPPARTIE;;
 
     //====CODES====//
     SetConsoleOutputCP(65001);
@@ -143,9 +160,11 @@ int main()
                                 scanf("%d", &collonne);
                                 printf("entrer le num de la ligne :");
                                 scanf("%d", &ligne);
-                                nbVie = Maquette1(ligne,collonne);
+                                Maquette1(ligne,collonne);
+                                nbVie = hpPartie(ligne,collonne);
                                 compteur ++;
                             }
+
                         }
                         break;
 
