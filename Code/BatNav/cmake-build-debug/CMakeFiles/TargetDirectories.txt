@@ -1,0 +1,3 @@
+C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/cmake-build-debug/CMakeFiles/BatNav.dir
+C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/cmake-build-debug/CMakeFiles/edit_cache.dir
