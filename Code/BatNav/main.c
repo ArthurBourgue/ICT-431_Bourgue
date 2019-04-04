@@ -26,9 +26,8 @@ char tableauVisu[9][9] = {
 
 int Maquette1(int col,int lig)                           //1ere grille de jeu.
 {
-    col = col - 1;
     lig = lig - 1;
-
+    col = col - 1;
     int tableauJoueur[9][9] = {
             0, 0, 1, 1, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 2, 0, 0, 0,
@@ -49,6 +48,9 @@ int Maquette1(int col,int lig)                           //1ere grille de jeu.
     } else {
         tableauVisu[col][lig] = 3;
         printf("loupé\n\n");
+    }
+    if(tableauVisu[3][1] == 1 && tableauVisu[4][1] == 1){
+        printf("Coulé");
     }
     int ligne = 0;
     int colonne = 0;
@@ -90,29 +92,6 @@ int Maquette1(int col,int lig)                           //1ere grille de jeu.
         return hpRestant;
 
 }
-        int afficheTbl(){
-
-            char tableauVisuel[9][10] = {
-                    1,0,0,0,0,0,0,0,0,
-                    2,0,0,0,0,0,0,0,0,
-                    3,0,0,0,0,0,0,0,0,
-                    4,0,0,0,0,0,0,0,0,
-                    5,0,0,0,0,0,0,0,0,
-                    6,0,0,0,0,0,0,0,0,
-                    7,0,0,0,0,0,0,0,0,
-                    8,0,0,0,0,0,0,0,0,
-                    9,0,0,0,0,0,0,0,0,
-            };
-            int ligne = 0;
-            int colonne = 0;
-            printf("1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |   9   |\n");
-            for (ligne = 0; ligne < 9; ligne++) {
-                for (colonne = 0; colonne < 9; colonne++) {
-                    printf("%d \t", tableauVisu[ligne][colonne]);
-                }
-                printf("\n");
-            }
-}
 
 
 int main()
@@ -123,8 +102,7 @@ int main()
     //====CODES====//
     SetConsoleOutputCP(65001);
     printf("====Bienvenu(e) dans cette BATTAILLE NAVAL!!!\n\n");
-    while(ChoixBase >3)
-    {
+
         printf("Veuillez choisir l'opriton que vous désirez:\n");
         printf("(1): afficher les règles du jeu.\n");
         printf("(2): afficher les diffèrents modes de jeux.\n");
@@ -175,9 +153,7 @@ int main()
                         }while(numMaquette >3 || numMaquette <1);
 
                         if (numMaquette == 1){
-
                             while(nbVie !=0) {
-                                afficheTbl();
                                 printf("entrer le num de la collonne :");
                                 scanf("%d", &collonne);
                                 printf("entrer le num de la ligne :");
@@ -209,7 +185,7 @@ int main()
             case 3:
                 return 400;
 
-        }
+
     }
 
 
