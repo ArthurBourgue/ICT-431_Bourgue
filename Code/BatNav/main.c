@@ -74,30 +74,51 @@ int Maquette1(int col,int lig)                           //1ere grille de jeu.
                 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 4, 4, 4, 4, 4,
         };
-    int hpRestant = HPPARTIE;
-    if(tableauJoueur[col][lig] == PETIT_BATEAU){
-        hpRestant = hpRestant - PETIT_BATEAU;
-    }else if (tableauJoueur[col][lig] == MOYEN_BATEAU1){
-        hpRestant = hpRestant - MOYEN_BATEAU1;
-    }else if(tableauJoueur[col][lig] == MOYEN_BATEAU2){
-        hpRestant = hpRestant - MOYEN_BATEAU2;
-    }else if(tableauJoueur[col][lig] == GRAND_BATEAU){
-        hpRestant = hpRestant - GRAND_BATEAU;
-    }else if(tableauJoueur[col][lig] == ENORME_BATEAU){
-        hpRestant = hpRestant - ENORME_BATEAU;
-    }
+        int hpRestant = 0;
+        if(tableauJoueur[col][lig] == PETIT_BATEAU){
+            hpRestant = hpRestant + PETIT_BATEAU;
+        }else if (tableauJoueur[col][lig] == MOYEN_BATEAU1){
+            hpRestant = hpRestant + MOYEN_BATEAU1;
+        }else if(tableauJoueur[col][lig] == MOYEN_BATEAU2){
+            hpRestant = hpRestant + MOYEN_BATEAU2;
+        }else if(tableauJoueur[col][lig] == GRAND_BATEAU){
+            hpRestant = hpRestant + GRAND_BATEAU;
+        }else if(tableauJoueur[col][lig] == ENORME_BATEAU){
+            hpRestant = hpRestant + ENORME_BATEAU;
+        }
 
-    printf("Il reste %d pourcents de ses HP à la maquette",hpRestant);
-    system("pause");
-    system("cls");
-    return hpRestant;
+        return hpRestant;
+
+}
+        int afficheTbl(){
+
+            char tableauVisuel[9][10] = {
+                    1,0,0,0,0,0,0,0,0,
+                    2,0,0,0,0,0,0,0,0,
+                    3,0,0,0,0,0,0,0,0,
+                    4,0,0,0,0,0,0,0,0,
+                    5,0,0,0,0,0,0,0,0,
+                    6,0,0,0,0,0,0,0,0,
+                    7,0,0,0,0,0,0,0,0,
+                    8,0,0,0,0,0,0,0,0,
+                    9,0,0,0,0,0,0,0,0,
+            };
+            int ligne = 0;
+            int colonne = 0;
+            printf("1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |   9   |\n");
+            for (ligne = 0; ligne < 9; ligne++) {
+                for (colonne = 0; colonne < 9; colonne++) {
+                    printf("%d \t", tableauVisu[ligne][colonne]);
+                }
+                printf("\n");
+            }
 }
 
 
 int main()
 {
     //====VARIABLES====//
-    int ChoixBase,ChoixJeux,collonne,ligne,numMaquette,nbVie = 1,compteur = 0,hpRestant = HPPARTIE;;
+    int ChoixBase,ChoixJeux,collonne,ligne,numMaquette,nbVie = 100,compteur = 0;
 
     //====CODES====//
     SetConsoleOutputCP(65001);
@@ -155,15 +176,21 @@ int main()
 
                         if (numMaquette == 1){
 
-                            while(nbVie >0) {
+                            while(nbVie !=0) {
+                                afficheTbl();
                                 printf("entrer le num de la collonne :");
                                 scanf("%d", &collonne);
                                 printf("entrer le num de la ligne :");
                                 scanf("%d", &ligne);
                                 Maquette1(ligne,collonne);
-                                nbVie = hpPartie(ligne,collonne);
+                                nbVie = nbVie - hpPartie(ligne,collonne);
                                 compteur ++;
+                                printf("Il reste %d pourcents de ses HP à la maquette\n",nbVie);
+                                system("pause");
+                                system("cls");
                             }
+                                printf("Bravooo!!! Vous avez réussi en %d coups!!!\n",compteur);
+                                system("pause");
 
                         }
                         break;
