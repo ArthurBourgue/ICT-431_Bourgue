@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="288" column="123" selection-start-line="288" selection-start-column="123" selection-end-line="288" selection-end-column="123" />
+            <state relative-caret-position="467">
+              <caret line="277" lean-forward="true" selection-start-line="277" selection-end-line="277" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -42,17 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Maquette1.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-              <folding>
-                <element signature="e#529#1668#0" />
-                <element signature="e#3783#3821#0" />
-                <element signature="e#2470#3059#0" />
-                <element signature="e#2890#3582#0" />
-                <element signature="e#3632#4215#0" />
-                <element signature="e#4197#4810#0" />
-                <element signature="e#3816#4839#0" />
-              </folding>
+            <state relative-caret-position="535">
+              <caret line="198" column="96" selection-start-line="198" selection-start-column="96" selection-end-line="198" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -60,17 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Maquette2.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="152" selection-start-line="152" selection-end-line="152" />
-              <folding>
-                <element signature="e#529#1751#0" />
-                <element signature="e#1759#2371#0" />
-                <element signature="e#2372#2987#0" />
-                <element signature="e#2988#3686#0" />
-                <element signature="e#3687#4300#0" />
-                <element signature="e#4301#4920#0" />
-                <element signature="e#1752#2775#0" />
-              </folding>
+            <state relative-caret-position="612">
+              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -78,17 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Maquette3.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="149" column="32" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="32" />
-              <folding>
-                <element signature="e#530#1757#0" />
-                <element signature="e#1759#2371#0" />
-                <element signature="e#2372#2987#0" />
-                <element signature="e#2988#3686#0" />
-                <element signature="e#3687#4300#0" />
-                <element signature="e#4301#4920#0" />
-                <element signature="e#1758#2782#0" />
-              </folding>
+            <state relative-caret-position="612">
+              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -102,13 +75,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Maquette1.h" />
-        <option value="$PROJECT_DIR$/Maquette2.h" />
         <option value="$PROJECT_DIR$/Maquette3.h" />
+        <option value="$PROJECT_DIR$/Maquette2.h" />
         <option value="$PROJECT_DIR$/main.c" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -119,7 +92,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,13 +103,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -173,11 +147,12 @@
       <workItem from="1554367843085" duration="5327000" />
       <workItem from="1554382376744" duration="1739000" />
       <workItem from="1554445952233" duration="10912000" />
+      <workItem from="1554463275386" duration="1065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20249000" />
+    <option name="totallyTimeSpent" value="21314000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -189,10 +164,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2573932" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12526652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -217,92 +191,37 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Maquette1.h</url>
-          <line>102</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Sandbox/corrBugMaquette/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Sandbox/Bataille_Naval/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="170" column="1" lean-forward="true" selection-end-line="170" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Sandbox/corrBugMaquette/main.c" />
+    <entry file="file://C:/Sandbox/Bataille_Naval/main.c" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Maquette2.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
-          <folding>
-            <element signature="e#529#1751#0" />
-            <element signature="e#1759#2371#0" />
-            <element signature="e#2372#2987#0" />
-            <element signature="e#2988#3686#0" />
-            <element signature="e#3687#4300#0" />
-            <element signature="e#4301#4920#0" />
-            <element signature="e#1752#2775#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Maquette1.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="e#529#1668#0" />
-            <element signature="e#3783#3821#0" />
-            <element signature="e#2470#3059#0" />
-            <element signature="e#2890#3582#0" />
-            <element signature="e#3632#4215#0" />
-            <element signature="e#4197#4810#0" />
-            <element signature="e#3816#4839#0" />
-          </folding>
+        <state relative-caret-position="535">
+          <caret line="198" column="96" selection-start-line="198" selection-start-column="96" selection-end-line="198" selection-end-column="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Maquette3.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="149" column="32" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="32" />
-          <folding>
-            <element signature="e#530#1757#0" />
-            <element signature="e#1759#2371#0" />
-            <element signature="e#2372#2987#0" />
-            <element signature="e#2988#3686#0" />
-            <element signature="e#3687#4300#0" />
-            <element signature="e#4301#4920#0" />
-            <element signature="e#1758#2782#0" />
-          </folding>
+        <state relative-caret-position="612">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Maquette2.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="288" column="123" selection-start-line="288" selection-start-column="123" selection-end-line="288" selection-end-column="123" />
+        <state relative-caret-position="467">
+          <caret line="277" lean-forward="true" selection-start-line="277" selection-end-line="277" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

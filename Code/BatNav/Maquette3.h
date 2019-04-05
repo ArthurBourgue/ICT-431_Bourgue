@@ -2,6 +2,15 @@
 // Created by Arthur.BOURGUE on 05.04.2019.
 //
 
+
+
+//====================================================================
+//Titre: Sous programme "Maquette3"
+//auteur: Arthur Bourgue
+//But: Fonctionnement complet de la 1re maquette
+//====================================================================
+
+
 #ifndef BATNAV_MAQUETTE3_H
 #define BATNAV_MAQUETTE3_H
 
@@ -13,7 +22,7 @@
 #define GRAND_BATEAU 3
 #define ENORME_BATEAU 4
 
-char tableauVisu3[9][9] = {
+char tableauVisu3[9][9] = {                                         //Tout idem que pour Maquette1//
         0,0,0,0,0,0,0,0,0,
         0,0,0,0,0,0,0,0,0,
         0,0,0,0,0,0,0,0,0,
@@ -25,7 +34,7 @@ char tableauVisu3[9][9] = {
         0,0,0,0,0,0,0,0,0,
 };
 
-int Maquette3(int col,int lig)                           //1ere grille de jeu.
+int Maquette3(int col,int lig)
 {
     lig = lig - 1;
     col = col - 1;

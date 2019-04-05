@@ -275,7 +275,7 @@ int main()
 
                     case 2:                                                                             //rentre dans le mode de jeu joueur VS IA
 
-                    .
+
                         system("cls");
                         printf("Joueur vs IA");
                         system("pause");
