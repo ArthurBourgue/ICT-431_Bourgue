@@ -50,9 +50,6 @@ int Maquette3(int col,int lig)                           //1ere grille de jeu.
         tableauVisu3[col][lig] = 3;
         printf("loupé\n\n");
     }
-    if(tableauVisu3[3][1] == 1 && tableauVisu3[4][1] == 1){
-        printf("Coulé");
-    }
     int ligne = 0;
     int colonne = 0;
     for (ligne = 0; ligne < 9; ligne++) {
@@ -62,6 +59,119 @@ int Maquette3(int col,int lig)                           //1ere grille de jeu.
         printf("\n");
     }
 }
+
+int HPPbateau3(int col,int lig){
+    col = col - 1;
+    lig = lig - 1;
+
+    int tableauJoueur[9][9] = {
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 4, 4, 4, 4, 4, 0,
+            0, 0, 0, 0, 0, 2, 0, 0, 0,
+            0, 0, 0, 0, 0, 2, 0, 1, 0,
+            0, 0, 0, 0, 0, 2, 0, 1, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            21, 21, 21, 0, 0, 0, 0, 0, 0,
+    };
+    int petitBateau = 0;
+
+    if(tableauJoueur[col][lig] == PETIT_BATEAU){
+        petitBateau = petitBateau + 1;
+    }
+    return  petitBateau;
+}
+int HPMbateau3(int col,int lig) {
+    col = col - 1;
+    lig = lig - 1;
+
+    int tableauJoueur[9][9] = {
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 4, 4, 4, 4, 4, 0,
+            0, 0, 0, 0, 0, 2, 0, 0, 0,
+            0, 0, 0, 0, 0, 2, 0, 1, 0,
+            0, 0, 0, 0, 0, 2, 0, 1, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            21, 21, 21, 0, 0, 0, 0, 0, 0,
+    };
+    int moyenBateau = 0;
+
+    if (tableauJoueur[col][lig] == MOYEN_BATEAU1) {
+        moyenBateau = moyenBateau + 1;
+    }
+    return moyenBateau;
+}
+int HPM2bateau3(int col,int lig) {
+    col = col - 1;
+    lig = lig - 1;
+
+    int tableauJoueur[9][9] = {
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 4, 4, 4, 4, 4, 0,
+            0, 0, 0, 0, 0, 2, 0, 0, 0,
+            0, 0, 0, 0, 0, 2, 0, 1, 0,
+            0, 0, 0, 0, 0, 2, 0, 1, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            21, 21, 21, 0, 0, 0, 0, 0, 0,
+    };
+    int moyenBateau2 = 0;
+
+    if (tableauJoueur[col][lig] == MOYEN_BATEAU2) {
+        moyenBateau2 = moyenBateau2 + 1;
+    }
+    return moyenBateau2;
+}
+int HPGbateau3(int col,int lig) {
+    col = col - 1;
+    lig = lig - 1;
+
+    int tableauJoueur[9][9] = {
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 4, 4, 4, 4, 4, 0,
+            0, 0, 0, 0, 0, 2, 0, 0, 0,
+            0, 0, 0, 0, 0, 2, 0, 1, 0,
+            0, 0, 0, 0, 0, 2, 0, 1, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            21, 21, 21, 0, 0, 0, 0, 0, 0,
+    };
+    int grandBateau = 0;
+    if (tableauJoueur[col][lig] == GRAND_BATEAU) {
+        grandBateau = grandBateau + 1;
+    }
+    return grandBateau;
+}
+int HPEbateau3(int col,int lig) {
+    col = col - 1;
+    lig = lig - 1;
+
+    int tableauJoueur[9][9] = {
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 0, 0, 0, 0, 0, 0,
+            0, 0, 3, 4, 4, 4, 4, 4, 0,
+            0, 0, 0, 0, 0, 2, 0, 0, 0,
+            0, 0, 0, 0, 0, 2, 0, 1, 0,
+            0, 0, 0, 0, 0, 2, 0, 1, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            21, 21, 21, 0, 0, 0, 0, 0, 0,
+    };
+    int enormeBateau = 0;
+
+    if (tableauJoueur[col][lig] == ENORME_BATEAU) {
+        enormeBateau = enormeBateau + 1;
+    }
+    return enormeBateau;
+}
+
+
+
 int hpPartie3(int col,int lig){
     col = col - 1;
     lig = lig - 1;
