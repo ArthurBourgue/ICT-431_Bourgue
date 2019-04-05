@@ -34,7 +34,13 @@ int main()
                 break;
 
             case 1:
-                printf("vous voila dans les règles du jeu :\n");
+                system("cls");
+                printf("vous voila dans les règles du jeu :\n\n");
+                printf("=====================================================================================================\n");
+                printf("▬ Le but du jeu est de selectionner des cases (entre 1 et 9) et de toucher tout les bateaux adverse.\n\n");
+                printf("▬ si vous toucher une case avec un bateau, un (1) s'affichera, si vous loupé un (3) sera affiché.\n\n");
+                printf("▬ A la fin de la partie le programme vous affichera le nombre de coups que vous avez utilisé.\n\n");
+                printf("=====================================================================================================\n\n");
                 system("pause");
                 break;
 
