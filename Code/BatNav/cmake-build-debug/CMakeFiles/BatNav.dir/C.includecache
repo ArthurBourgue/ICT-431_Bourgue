@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/Maquette1.h
+
+C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/Maquette2.h
+
+C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/Maquette3.h
+
 C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/main.c
 stdio.h
 -
@@ -13,4 +19,12 @@ stdlib.h
 -
 windows.h
 -
+time.h
+-
+Maquette1.h
+C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/Maquette1.h
+Maquette2.h
+C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/Maquette2.h
+Maquette3.h
+C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/Maquette3.h
 

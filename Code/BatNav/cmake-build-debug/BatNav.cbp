@@ -76,6 +76,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/Maquette1.h">
+			<Option target="BatNav"/>
+		</Unit>
+		<Unit filename="C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/Maquette2.h">
+			<Option target="BatNav"/>
+		</Unit>
+		<Unit filename="C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/Maquette3.h">
+			<Option target="BatNav"/>
+		</Unit>
 		<Unit filename="C:/GitHub/Nouveau dossier/ICT-431_Bourgue/Code/BatNav/main.c">
 			<Option target="BatNav"/>
 		</Unit>
