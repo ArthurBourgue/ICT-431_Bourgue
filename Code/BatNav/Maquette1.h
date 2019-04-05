@@ -25,8 +25,8 @@ char tableauVisu[9][9] = {
         0,0,0,0,0,0,0,0,0,
 };
 
-int Maquette1(int col,int lig)                           //1ere grille de jeu.
-{
+int Maquette1(int col,int lig)  {                         //1ere grille de jeu.
+
     lig = lig - 1;
     col = col - 1;
     int tableauJoueur[9][9] = {
@@ -50,9 +50,8 @@ int Maquette1(int col,int lig)                           //1ere grille de jeu.
         tableauVisu[col][lig] = 3;
         printf("loupé\n\n");
     }
-    if(tableauVisu[3][1] == 1 && tableauVisu[4][1] == 1){
-        printf("Coulé");
-    }
+
+
     int ligne = 0;
     int colonne = 0;
     for (ligne = 0; ligne < 9; ligne++) {
@@ -62,6 +61,116 @@ int Maquette1(int col,int lig)                           //1ere grille de jeu.
         printf("\n");
     }
 }
+int HPPbateau(int col,int lig){
+    col = col - 1;
+    lig = lig - 1;
+
+    int tableauJoueurP[9][9] = {
+            0, 0, 1, 1, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 2, 0, 0, 0,
+            0, 0, 0, 0, 0, 2, 0, 0, 3,
+            0, 0, 0, 0, 0, 2, 0, 0, 3,
+            0, 0, 0, 0, 0, 0, 0, 0, 3,
+            0, 0, 21, 21, 21, 0, 0, 0, 3,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 4, 4, 4, 4, 4,
+    };
+    int petitBateau = 0;
+
+    if(tableauJoueurP[col][lig] == PETIT_BATEAU){
+        petitBateau = petitBateau + 1;
+    }
+    return  petitBateau;
+}
+int HPMbateau(int col,int lig) {
+    col = col - 1;
+    lig = lig - 1;
+
+    int tableauJoueurM[9][9] = {
+            0, 0, 1, 1, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 2, 0, 0, 0,
+            0, 0, 0, 0, 0, 2, 0, 0, 3,
+            0, 0, 0, 0, 0, 2, 0, 0, 3,
+            0, 0, 0, 0, 0, 0, 0, 0, 3,
+            0, 0, 21, 21, 21, 0, 0, 0, 3,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 4, 4, 4, 4, 4,
+    };
+    int moyenBateau = 0;
+
+    if (tableauJoueurM[col][lig] == MOYEN_BATEAU1) {
+        moyenBateau = moyenBateau + 1;
+    }
+    return moyenBateau;
+}
+int HPM2bateau(int col,int lig) {
+        col = col - 1;
+        lig = lig - 1;
+
+        int tableauJoueurM2[9][9] = {
+                0, 0, 1, 1, 0, 0, 0, 0, 0,
+                0, 0, 0, 0, 0, 2, 0, 0, 0,
+                0, 0, 0, 0, 0, 2, 0, 0, 3,
+                0, 0, 0, 0, 0, 2, 0, 0, 3,
+                0, 0, 0, 0, 0, 0, 0, 0, 3,
+                0, 0, 21, 21, 21, 0, 0, 0, 3,
+                0, 0, 0, 0, 0, 0, 0, 0, 0,
+                0, 0, 0, 0, 0, 0, 0, 0, 0,
+                0, 0, 0, 0, 4, 4, 4, 4, 4,
+        };
+        int moyenBateau2 = 0;
+
+        if (tableauJoueurM2[col][lig] == MOYEN_BATEAU2) {
+            moyenBateau2 = moyenBateau2 + 1;
+        }
+        return moyenBateau2;
+    }
+int HPGbateau(int col,int lig) {
+    col = col - 1;
+    lig = lig - 1;
+
+    int tableauJoueurG[9][9] = {
+            0, 0, 1, 1, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 2, 0, 0, 0,
+            0, 0, 0, 0, 0, 2, 0, 0, 3,
+            0, 0, 0, 0, 0, 2, 0, 0, 3,
+            0, 0, 0, 0, 0, 0, 0, 0, 3,
+            0, 0, 21, 21, 21, 0, 0, 0, 3,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 4, 4, 4, 4, 4,
+    };
+    int grandBateau = 0;
+    if (tableauJoueurG[col][lig] == GRAND_BATEAU) {
+        grandBateau = grandBateau + 1;
+    }
+    return grandBateau;
+}
+int HPEbateau(int col,int lig) {
+    col = col - 1;
+    lig = lig - 1;
+
+    int tableauJoueurE[9][9] = {
+            0, 0, 1, 1, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 2, 0, 0, 0,
+            0, 0, 0, 0, 0, 2, 0, 0, 3,
+            0, 0, 0, 0, 0, 2, 0, 0, 3,
+            0, 0, 0, 0, 0, 0, 0, 0, 3,
+            0, 0, 21, 21, 21, 0, 0, 0, 3,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 4, 4, 4, 4, 4,
+    };
+    int enormeBateau = 0;
+
+    if (tableauJoueurE[col][lig] == ENORME_BATEAU) {
+        enormeBateau = enormeBateau + 1;
+    }
+    return enormeBateau;
+}
+
 int hpPartie(int col,int lig){
     col = col - 1;
     lig = lig - 1;

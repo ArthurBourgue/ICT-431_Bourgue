@@ -15,7 +15,7 @@
 int main()
 {
     //====VARIABLES====//
-    int ChoixBase,ChoixJeux,collonne,ligne,numMaquette = 0,nbVie = 103,compteur = 0;
+    int ChoixBase,ChoixJeux,collonne,ligne,numMaquette = 0,nbVie = 103,compteur = 0,VPBat = 2,VMBat = 3,VM2Bat = 3,VGBat = 4,VEBat = 5;
 
     //====CODES====//
     SetConsoleOutputCP(65001);
@@ -82,17 +82,64 @@ int main()
 
                         }while(numMaquette >3 || numMaquette <1);                           //Test du num de la maquette
 
-                        if (numMaquette == 1){                                              //
-                            while(nbVie !=0) {
-                                printf("Binevenu(e) dans la Maquette1\n\n");
+                        if (numMaquette == 1){                                              //Maquette1
+                            while(nbVie !=0) {                                              //Boucle qui tourne tant que Vie !=0
+
+                                system("cls");
+                                printf("============================================\n");
+                                printf("Binevenu(e) dans la Maquette1\n");
+                                printf("============================================\n\n");
+                                printf("============================================\n");
                                 printf("entrer le num de la collonne :");
                                 scanf("%d", &collonne);
                                 printf("entrer le num de la ligne :");
                                 scanf("%d", &ligne);
+                                printf("============================================\n");
                                 Maquette1(ligne,collonne);
                                 nbVie = nbVie - hpPartie(ligne,collonne);
                                 compteur ++;
+
+                                VPBat = VPBat - HPPbateau(ligne,collonne);
+                                int moyenBat = HPMbateau(ligne,collonne);
+                                VMBat = VMBat - moyenBat;
+                                VM2Bat = VM2Bat - HPM2bateau(ligne,collonne);
+                                VGBat = VGBat - HPGbateau(ligne,collonne);
+                                VEBat = VEBat - HPEbateau(ligne,collonne);
+
+                                printf("============================================\n");
+                                if(VPBat != 0) {
+                                    printf("Il reste %d /2 HP au petit bateau\n", VPBat);
+                                }else {
+                                    printf("Petit Bateau: Coulé!!!\n");
+                                }
+                                printf("============================================\n");
+                                if(VMBat != 0) {
+                                    printf("Il reste %d /3 HP au moyen bateau(1)\n", VMBat);
+                                }else {
+                                    printf("Moyen bateau(1): Coulé!!!\n");
+                                }
+                                printf("============================================\n");
+                                if(VM2Bat !=0) {
+                                    printf("Il reste %d /3 HP au moyen bateau(2)\n", VM2Bat);
+                                }else {
+                                    printf("Moyen bateau(2): Coulé!!!\n");
+                                }
+                                printf("============================================\n");
+                                if(VGBat !=0) {
+                                    printf("Il reste %d /4 HP au grand bateau\n", VGBat);
+                                }else {
+                                    printf("Grand bateau: Coulé!!!\n");
+                                }
+                                printf("============================================\n");
+                                if(VEBat !=0) {
+                                    printf("Il reste %d /5 HP au enorme bateau\n", VEBat);
+                                }else{
+                                    printf("Enorme bateau: Coulé!!!\n");
+                                }
+                                printf("============================================\n\n");
+                                printf("============================================\n");
                                 printf("Il reste %d /103 de ses HP à la maquette\n",nbVie);
+                                printf("============================================\n");
                                 system("pause");
                                 system("cls");
                             }
@@ -102,15 +149,22 @@ int main()
                         } else if (numMaquette == 2){
                             while(nbVie !=0) {
 
-                                printf("Binevenu(e) dans la Maquette2\n\n");
+                                system("cls");
+                                printf("============================================\n");
+                                printf("Binevenu(e) dans la Maquette2\n");
+                                printf("============================================\n\n");
+                                printf("============================================\n");
                                 printf("entrer le num de la collonne :");
                                 scanf("%d", &collonne);
                                 printf("entrer le num de la ligne :");
                                 scanf("%d", &ligne);
+                                printf("============================================\n\n");
                                 Maquette2(ligne,collonne);
                                 nbVie = nbVie - hpPartie2(ligne,collonne);
                                 compteur ++;
+                                printf("============================================\n");
                                 printf("Il reste %d /103 de ses HP à la maquette\n",nbVie);
+                                printf("============================================\n");
                                 system("pause");
                                 system("cls");
                             }
@@ -119,15 +173,22 @@ int main()
                             } else{
                             while(nbVie !=0) {
 
-                                printf("Binevenu(e) dans la Maquette3\n\n");
+                                system("cls");
+                                printf("============================================\n");
+                                printf("Binevenu(e) dans la Maquette3\n");
+                                printf("============================================\n\n");
+                                printf("============================================\n");
                                 printf("entrer le num de la collonne :");
                                 scanf("%d", &collonne);
                                 printf("entrer le num de la ligne :");
                                 scanf("%d", &ligne);
+                                printf("============================================\n");
                                 Maquette3(ligne,collonne);
                                 nbVie = nbVie - hpPartie3(ligne,collonne);
                                 compteur ++;
+                                printf("============================================\n");
                                 printf("Il reste %d /103 de ses HP à la maquette\n",nbVie);
+                                printf("============================================\n");
                                 system("pause");
                                 system("cls");
                             }
